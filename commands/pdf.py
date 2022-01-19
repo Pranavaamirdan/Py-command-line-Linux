@@ -88,4 +88,6 @@ def command():
 
     print(color['green'] + "PPT Successfully Downloaded as SVG Files; Can Be Found In The Folder " + color['end'] + style['bold'] + folderName + style['end'])
 
+    os.system('cat file.pdf')
+
 command()   
