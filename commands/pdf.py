@@ -1,3 +1,4 @@
+from fileinput import filename
 import os
 from require.Text import color, style
 import require.svgToPDF as svg
@@ -56,9 +57,9 @@ def command():
 
         svg_save()
 
-        os.chdir(folder)    
+        os.chdir(folder)
 
-        svg.convert(filePath, pdfFileName)
+        svg.convert(filePath, fileName, pdfFileName)
 
 
     def PDF_merge():

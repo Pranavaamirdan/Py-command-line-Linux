@@ -1,34 +1,49 @@
 from svglib.svglib import svg2rlg
 from reportlab.platypus import SimpleDocTemplate, Frame, PageTemplate
 from reportlab.lib.pagesizes import letter, A3
+from svgutils.compose import *
 import os
 
-# def scale(drawing, scaling_factor):
-#     """
-#     scale a reportlab.graphics.shapes.drawing()
-#     object while maintaining the aspect ratio
-#     """
-#     scaling_x = scaling_factor
-#     scaling_y = scaling_factor
+fig = Figure("1120px", "630px",
+       Panel(
+              SVG("slide1.svg").scale(0.875),
+             ).move(0, 0)
+       )
 
-#     drawing.width = drawing.minWidth() * scaling_x
-#     drawing.height = drawing.height * scaling_y
-#     drawing.scale(scaling_x, scaling_y)
-#     return drawing
+os.remove("slide1.svg")
+fig.save("slide1.svg")
 
-def convert(path,name):
+
+def convert(path, svgname, name):
     drawing = svg2rlg(path)
-    # scaled_drawing = scale(name,scaling_factor = 1)
     
-
     width = drawing.width
     height = drawing.height
-    # print(f'Height = {height}, Width = {width}')
+
+    def landscape():
+        fig = Figure("1120px", "630px",
+            Panel(
+                    SVG(svgname).scale(0.875),
+                    ).move(0, 0)
+            )
+        os.remove(svgname)
+        fig.save(svgname)
+    
+    def portrait():
+        fig = Figure("620px", "877px",
+            Panel(
+                    SVG(svgname),
+                    ).move(0, 0)
+            )
+        os.remove(svgname)
+        fig.save(svgname)
 
     if width > height:
-        size = (1280,720)#(910,700)
+        size = (1280,720)
+        landscape()
     elif width < height:
-        size = (800,1056)
+        size = (620,877)
+        portrait()
         
     doc = SimpleDocTemplate(name,
         pagesize= size,
@@ -37,10 +52,6 @@ def convert(path,name):
 
     story = []
     story.append(drawing)
-
-    # frameT = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id='normal')
-
-    # doc.addPageTemplates([PageTemplate(id='OneCol',frames=frameT)])
 
     doc.build(story)
 

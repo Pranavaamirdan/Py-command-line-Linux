@@ -12,25 +12,25 @@ def command():
 
     try:
         folder_array = {
-            "computer": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Computer/",
-            "english": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_English/",
-            "english-l": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_English/Literature/",
-            "english-g": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_English/Grammar/",
-            "math": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Maths/",
-            "sanskrit": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Sanskrit/",
-            "sanskrit-a": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Sanskrit/Activity/",
-            "sanskrit-l": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Sanskrit/Literature/",
-            "sanskrit-g": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Sanskrit/Grammar/",
-            "science": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Science/",
-            "science-b": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Science/Biology/",
-            "science-c": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Science/Chemistry/",
-            "science-p":"C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_Science/Physics",
-            "sst":"C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_SST/",
-            "sst-h": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_SST/History/",
-            "sst-c": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_SST/Civics/",
-            "sst-e": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_SST/Economics/",
-            "sst-g": "C:/Users/prana/OneDrive/Desktop/Pranava Amirdan/Delhi Public School 9th Grade/Subject_SST/Geography/",
-            "test" : "C:/Users/prana/OneDrive/Desktop/Py-command-line/"
+            "computer": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Computer/",
+            "english": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_English/",
+            "english-l": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_English/Literature/",
+            "english-g": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_English/Grammar/",
+            "math": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Maths/",
+            "sanskrit": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Sanskrit/",
+            "sanskrit-a": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Sanskrit/Activity/",
+            "sanskrit-l": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Sanskrit/Literature/",
+            "sanskrit-g": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Sanskrit/Grammar/",
+            "science": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Science/",
+            "science-b": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Science/Biology/",
+            "science-c": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Science/Chemistry/",
+            "science-p": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_Science/Physics/",
+            "sst": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_SST/",
+            "sst-h": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_SST/History/",
+            "sst-c": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_SST/Civics/",
+            "sst-e": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_SST/Economics/",
+            "sst-g": "/run/media/ppa/GARUDALINUX/Delhi Public School 9th Grade/Subject_SST/Geography/",
+            "test" : "/home/ppa/Desktop/Py-command-line/"
         }
 
         folder = folder_array[f'{path_name}']
